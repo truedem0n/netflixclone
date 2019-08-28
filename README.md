@@ -1,2 +1,2 @@
 # netflixclone
-Cloning netflix in html and css
+Cloning netflix in html, css and js.
