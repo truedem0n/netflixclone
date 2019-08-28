@@ -26,7 +26,7 @@
     </header>
     <div class="tabsContainer">
       <div class="tabs">
-        <a href="#" class="tabItem1">
+        <a href="#" onclick="return false;" class="tabItem1 active">
           <svg
             version="1.1"
             viewBox="0 0 40 48"
@@ -44,7 +44,7 @@
             Cancel online at anytime
           </p>
         </a>
-        <a href="#" class="tabItem2">
+        <a href="#" onclick="return false;" class="tabItem2">
           <svg
             viewBox="0 0 145 48"
             class="svg-icon svg-icon-icon-cross-device-screens-desktop "
@@ -60,7 +60,7 @@
           </svg>
           <p>Watch anywhere</p>
         </a>
-        <a href="#" class="tabItem3">
+        <a href="#" onclick="return false;" class="tabItem3">
           <svg
             viewBox="0 0 63 48"
             class="svg-icon svg-icon-icon-price-tag "
@@ -84,7 +84,7 @@
     </div>
     <div class="wrap">
       <div class="contentContainer">
-        <div class="tab1">
+        <div class="tab1" id="tab1">
           <div class="first">
             <p>
               If you decide Netflix isn't for you - no problem. No commitment.
@@ -99,8 +99,147 @@
             />
           </div>
         </div>
-        <div class="tab2"></div>
-        <div class="tab3"></div>
+        <div class="dnone" id="tab2">
+          <p class="tabHeading">
+            Watch TV shows and movies anytime, anywhere — personalized for you.
+          </p>
+          <a href="#">TRY IT NOW</a>
+          <div class="tv">
+            <img
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/home/thisIsNetflix/modules/asset_TV_UI.png"
+              alt=""
+            />
+            <h3>Watch on your TV</h3>
+            <p>
+              Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+              players and more.
+            </p>
+          </div>
+          <div class="mobile">
+            <img
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/home/thisIsNetflix/modules/asset_mobile_tablet_UI_2.png"
+              alt=""
+            />
+            <h3>Watch instantly or download for later</h3>
+            <p>
+              Available on phone and tablet, wherever you go.
+            </p>
+          </div>
+          <div class="laptop">
+            <img
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/home/thisIsNetflix/modules/asset_website_UI.png"
+              alt=""
+            />
+            <h3>Use any computer</h3>
+            <p>
+              Watch right on Netflix.com.
+            </p>
+          </div>
+        </div>
+        <div class="dnone" id="tab3">
+          <p>Choose one plan and watch everything on Netflix.</p>
+          <a href="#">TRY IT NOW</a>
+          <table class="tin-pricing-table tin-pricing-table--has3Plans">
+            <tbody>
+              <tr class="tin-table-header" style="padding: 10px;">
+                <th class="tin-pricing-th"></th>
+                <th class="tin-pricing-th">Basic</th>
+                <th class="tin-pricing-th">Standard</th>
+                <th class="tin-pricing-th">Premium</th>
+              </tr>
+
+              <tr class="tin-pricing-table-row">
+                <td class="tin-pricing-table-data" id="left-align">
+                  Monthly price
+                </td>
+                <td class="tin-pricing-table-data">$9.99</td>
+                <td class="tin-pricing-table-data">$13.99</td>
+                <td class="tin-pricing-table-data">$16.99</td>
+              </tr>
+
+              <tr class="tin-pricing-table-row grayit">
+                <td class="tin-pricing-table-data" id="left-align">
+                  HD available
+                </td>
+                <td class="tin-pricing-table-data">
+                  <span class="icon icon-plainX"></span>
+                </td>
+                <td class="tin-pricing-table-data">
+                  <span class="icon icon-plainCheck"></span>
+                </td>
+                <td class="tin-pricing-table-data">
+                  <span class="icon icon-plainCheck"></span>
+                </td>
+              </tr>
+              <tr class="tin-pricing-table-row">
+                <td class="tin-pricing-table-data" id="left-align">
+                  Ultra HD available
+                </td>
+                <td class="tin-pricing-table-data">
+                  <span class="icon icon-plainX"></span>
+                </td>
+                <td class="tin-pricing-table-data">
+                  <span class="icon icon-plainX"></span>
+                </td>
+                <td class="tin-pricing-table-data">
+                  <span class="icon icon-plainCheck"></span>
+                </td>
+              </tr>
+
+              <tr class="tin-pricing-table-row grayit">
+                <td class="tin-pricing-table-data" id="left-align">
+                  Screens you can watch on at the same time
+                </td>
+                <td class="tin-pricing-table-data">1</td>
+                <td class="tin-pricing-table-data">2</td>
+                <td class="tin-pricing-table-data">4</td>
+              </tr>
+
+              <tr class="tin-pricing-table-row">
+                <td class="tin-pricing-table-data" id="left-align">
+                  Watch on your laptop, TV, phone and tablet
+                </td>
+                <td class="tin-pricing-table-data">
+                  <span class="icon icon-plainCheck"></span>
+                </td>
+                <td class="tin-pricing-table-data">
+                  <span class="icon icon-plainCheck"></span>
+                </td>
+                <td class="tin-pricing-table-data">
+                  <span class="icon icon-plainCheck"></span>
+                </td>
+              </tr>
+              <tr class="tin-pricing-table-row grayit">
+                <td class="tin-pricing-table-data" id="left-align">
+                  Unlimited movies and TV shows
+                </td>
+                <td class="tin-pricing-table-data">
+                  <span class="icon icon-plainCheck"></span>
+                </td>
+                <td class="tin-pricing-table-data">
+                  <span class="icon icon-plainCheck"></span>
+                </td>
+                <td class="tin-pricing-table-data">
+                  <span class="icon icon-plainCheck"></span>
+                </td>
+              </tr>
+              <tr class="tin-pricing-table-row">
+                <td class="tin-pricing-table-data" id="left-align">
+                  Cancel anytime
+                </td>
+                <td class="tin-pricing-table-data">
+                  <span class="icon icon-plainCheck"></span>
+                </td>
+                <td class="tin-pricing-table-data">
+                  <span class="icon icon-plainCheck"></span>
+                </td>
+                <td class="tin-pricing-table-data">
+                  <span class="icon icon-plainCheck"></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
     <footer>
@@ -111,7 +250,22 @@
         <div class="col3">Account</div>
         <div class="col4">Media Center</div>
         <div class="select">
-                <select data-uia="language-picker" class="ui-select medium" id="undefined-select" tabindex="0" placeholder="lang-switcher"><option selected="" value="/ca/" data-language="en" data-country="CA">English</option><option value="/ca-fr/" data-language="fr" data-country="CA">Français</option></select>
+          <select
+            data-uia="language-picker"
+            class="ui-select medium"
+            id="undefined-select"
+            tabindex="0"
+            placeholder="lang-switcher"
+            ><option
+              selected=""
+              value="/ca/"
+              data-language="en"
+              data-country="CA"
+              >English</option
+            ><option value="/ca-fr/" data-language="fr" data-country="CA"
+              >Français</option
+            ></select
+          >
         </div>
         <div class="copyMark">Netflix Canada</div>
       </div>

@@ -118,7 +118,36 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"script.js":[function(require,module,exports) {
-
+var tabitem1_a = document.querySelector(".tabItem1");
+var tabitem2_a = document.querySelector(".tabItem2");
+var tabitem3_a = document.querySelector(".tabItem3");
+var tab1_div = document.querySelector("#tab1");
+var tab2_div = document.querySelector("#tab2");
+var tab3_div = document.querySelector("#tab3");
+tabitem1_a.addEventListener("click", function () {
+  tabitem1_a.classList.add("active");
+  tabitem2_a.classList.remove("active");
+  tabitem3_a.classList.remove("active");
+  tab1_div.classList = ["tab1"];
+  tab2_div.classList = ["dnone"];
+  tab3_div.classList = ["dnone"];
+});
+tabitem2_a.addEventListener("click", function () {
+  tabitem1_a.classList.remove("active");
+  tabitem2_a.classList.add("active");
+  tabitem3_a.classList.remove("active");
+  tab1_div.classList = ["dnone"];
+  tab2_div.classList = ["tab2"];
+  tab3_div.classList = ["dnone"];
+});
+tabitem3_a.addEventListener("click", function () {
+  tabitem1_a.classList.remove("active");
+  tabitem2_a.classList.remove("active");
+  tabitem3_a.classList.add("active");
+  tab1_div.classList = ["dnone"];
+  tab2_div.classList = ["dnone"];
+  tab3_div.classList = ["tab3"];
+});
 },{}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -147,7 +176,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35131" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38615" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

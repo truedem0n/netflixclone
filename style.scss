@@ -6,6 +6,7 @@ $text-color: white;
   padding: 0;
   color: white;
   font-family: "Open Sans", sans-serif;
+  border-spacing: 0px;
 }
 a {
   color: $text-color;
@@ -94,8 +95,9 @@ body {
       margin: 0px auto;
       width: 80%;
       text-align: center;
+
       .tabItem1 {
-        border-bottom: 4px solid $btn-background;
+        border-bottom: 4px solid rgba(0, 0, 0, 0);
         width: 100%;
         height: 100%;
         svg {
@@ -109,7 +111,7 @@ body {
         }
       }
       .tabItem2 {
-        // border-bottom: 4px solid $btn-background;
+        border-bottom: 4px solid rgba(0, 0, 0, 0);
         width: 100%;
         height: 100%;
         svg {
@@ -130,6 +132,7 @@ body {
         }
       }
       .tabItem3 {
+        border-bottom: 4px solid rgba(0, 0, 0, 0);
         width: 100%;
         height: 100%;
         svg {
@@ -148,6 +151,9 @@ body {
           color: white;
         }
       }
+      .active {
+        border-bottom: 4px solid $btn-background;
+      }
     }
   }
   .wrap {
@@ -156,11 +162,15 @@ body {
     .contentContainer {
       height: 100%;
       width: 75%;
+      padding: 0px;
       margin: 0px auto;
       .tab1 {
         display: grid;
-        grid-template-columns: 50% 40%;
+
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
         justify-items: center;
+        height: 100%;
         align-items: center;
         position: relative;
         .first {
@@ -178,11 +188,85 @@ body {
         .second {
           img {
             align-self: start;
+            width: 80%;
+          }
+        }
+      }
+      .tab2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20% 80%;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        position: relative;
+        .tabHeading {
+          grid-column: 1/3;
+        }
+        a {
+          grid-column: 3/4;
+          justify-self: center;
+          background: $btn-background;
+          letter-spacing: 2px;
+          padding: 15px 20px;
+          width: 110px;
+          border-radius: 2px;
+        }
+        .tv,
+        .mobile,
+        .laptop {
+          width: 100%;
+          justify-self: center;
+          text-align: center;
+          img {
             width: 100%;
           }
         }
       }
+      .tab3 {
+        display: grid;
+        grid-template-rows: 1fr 5fr;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        position: relative;
+        p,
+        a {
+          grid-row: 1/2;
+        }
+        a {
+          background: $btn-background;
+          grid-row: 1/2;
+          grid-column: 2/3;
+          letter-spacing: 2px;
+          padding: 15px 20px;
+          width: 110px;
+          border-radius: 2px;
+        }
+        .tin-pricing-table {
+          grid-row: 2/3;
+          grid-column: 1/3;
+          align-items: center;
+          text-align: center;
+        }
+        .tin-table-header {
+          font-size: 1.2rem;
+        }
+        #left-align {
+          text-align: left;
+        }
+        .grayit {
+          background: #222222;
+        }
+        .tin-pricing-table-data {
+          padding: 10px 20px;
+        }
+      }
     }
+  }
+  .dnone {
+    visibility: hidden;
+    display: none;
   }
   footer {
     height: 360px;
@@ -211,14 +295,14 @@ body {
   grid-row: 2/3;
   grid-column: 2/3;
 }
-.copyMark{
-    grid-row: 4/5;
+.copyMark {
+  grid-row: 4/5;
 }
-.select{
-    select{
-        padding: 10px;
+.select {
+  select {
+    padding: 10px;
     color: white;
     background: black;
-    border:1px solid $btn-background;
-    }
+    border: 1px solid $btn-background;
+  }
 }
