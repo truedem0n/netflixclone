@@ -1,0 +1,20 @@
+{
+  "name": "netflixclone",
+  "version": "1.0.0",
+  "description": "Cloning netflix in html and css",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/truedem0n/netflixclone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/truedem0n/netflixclone/issues"
+  },
+  "homepage": "https://github.com/truedem0n/netflixclone#readme"
+}
