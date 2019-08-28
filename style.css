@@ -89,14 +89,181 @@ body .showcase::after {
           box-shadow: inset 100px 50px 200px #000, inset -100px -50px 200px #000;
 }
 
-body .tabs {
+body .tabsContainer {
   height: 162px;
   background: #141414;
   border-bottom: 2px solid #3d3d3d;
 }
 
-body .tabs svg {
-  height: 100px;
+body .tabsContainer .tabs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  margin: 0px auto;
+  width: 80%;
+  text-align: center;
+}
+
+body .tabsContainer .tabs .tabItem1 {
+  border-bottom: 4px solid #e20520;
+  width: 100%;
+  height: 100%;
+}
+
+body .tabsContainer .tabs .tabItem1 svg {
+  height: 50px;
+  padding-top: 40px;
   fill: white;
+}
+
+body .tabsContainer .tabs .tabItem1 p {
+  width: 185px;
+  margin: 0px auto;
+}
+
+body .tabsContainer .tabs .tabItem2 {
+  width: 100%;
+  height: 100%;
+}
+
+body .tabsContainer .tabs .tabItem2 svg {
+  height: 50px;
+  padding-top: 40px;
+  fill: gray;
+  color: gray;
+}
+
+body .tabsContainer .tabs .tabItem2 p {
+  width: 185px;
+  margin: 0px auto;
+  color: gray;
+}
+
+body .tabsContainer .tabs .tabItem2:hover p {
+  color: white;
+}
+
+body .tabsContainer .tabs .tabItem3 {
+  width: 100%;
+  height: 100%;
+}
+
+body .tabsContainer .tabs .tabItem3 svg {
+  height: 50px;
+  padding-top: 40px;
+  fill: gray;
+}
+
+body .tabsContainer .tabs .tabItem3 p {
+  width: 185px;
+  margin: 0px auto;
+  color: gray;
+}
+
+body .tabsContainer .tabs .tabItem3:hover p {
+  color: white;
+}
+
+body .wrap {
+  height: 576px;
+  background: black;
+}
+
+body .wrap .contentContainer {
+  height: 100%;
+  width: 75%;
+  margin: 0px auto;
+}
+
+body .wrap .contentContainer .tab1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 40%;
+      grid-template-columns: 50% 40%;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+body .wrap .contentContainer .tab1 .first p {
+  font-size: 2rem;
+  padding-bottom: 40px;
+}
+
+body .wrap .contentContainer .tab1 .first a {
+  background: #e20520;
+  letter-spacing: 2px;
+  padding: 15px 20px;
+  border-radius: 2px;
+}
+
+body .wrap .contentContainer .tab1 .second img {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  width: 100%;
+}
+
+body footer {
+  height: 360px;
+  background: black;
+}
+
+body footer .contact {
+  width: 75%;
+  height: 95%;
+  color: #999;
+  margin: 0px auto;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 3fr 1fr 1fr;
+      grid-template-rows: 1fr 3fr 1fr 1fr;
+}
+
+.questions {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+}
+
+.col1 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.col2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.copyMark {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+
+.select select {
+  padding: 10px;
+  color: white;
+  background: black;
+  border: 1px solid #e20520;
 }
 /*# sourceMappingURL=style.css.map */

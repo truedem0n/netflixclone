@@ -81,13 +81,144 @@ body {
     box-shadow: inset 100px 50px 200px #000, inset -100px -50px 200px #000;
   }
   //showcase end
-  .tabs {
+  .tabsContainer {
     height: 162px;
     background: #141414;
     border-bottom: 2px solid #3d3d3d;
-    svg {
-      height: 100px;
-      fill: white;
+    .tabs {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+      height: 100%;
+      margin: 0px auto;
+      width: 80%;
+      text-align: center;
+      .tabItem1 {
+        border-bottom: 4px solid $btn-background;
+        width: 100%;
+        height: 100%;
+        svg {
+          height: 50px;
+          padding-top: 40px;
+          fill: white;
+        }
+        p {
+          width: 185px;
+          margin: 0px auto;
+        }
+      }
+      .tabItem2 {
+        // border-bottom: 4px solid $btn-background;
+        width: 100%;
+        height: 100%;
+        svg {
+          height: 50px;
+          padding-top: 40px;
+          fill: gray;
+          color: gray;
+        }
+        p {
+          width: 185px;
+          margin: 0px auto;
+          color: gray;
+        }
+      }
+      .tabItem2:hover {
+        p {
+          color: white;
+        }
+      }
+      .tabItem3 {
+        width: 100%;
+        height: 100%;
+        svg {
+          height: 50px;
+          padding-top: 40px;
+          fill: gray;
+        }
+        p {
+          width: 185px;
+          margin: 0px auto;
+          color: gray;
+        }
+      }
+      .tabItem3:hover {
+        p {
+          color: white;
+        }
+      }
     }
   }
+  .wrap {
+    height: 576px;
+    background: black;
+    .contentContainer {
+      height: 100%;
+      width: 75%;
+      margin: 0px auto;
+      .tab1 {
+        display: grid;
+        grid-template-columns: 50% 40%;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+        .first {
+          p {
+            font-size: 2rem;
+            padding-bottom: 40px;
+          }
+          a {
+            background: $btn-background;
+            letter-spacing: 2px;
+            padding: 15px 20px;
+            border-radius: 2px;
+          }
+        }
+        .second {
+          img {
+            align-self: start;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    height: 360px;
+    background: black;
+    .contact {
+      width: 75%;
+      height: 95%;
+      color: #999;
+      margin: 0px auto;
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 3fr 1fr 1fr;
+      //   grid-template-areas: "questions .", "col1 col2";
+    }
+  }
+}
+
+.questions {
+  grid-column: 1/5;
+}
+.col1 {
+  grid-row: 2/3;
+}
+.col2 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+.copyMark{
+    grid-row: 4/5;
+}
+.select{
+    select{
+        padding: 10px;
+    color: white;
+    background: black;
+    border:1px solid $btn-background;
+    }
 }
